@@ -38,4 +38,8 @@ extension UIAlertController {
         self.init(title: title, message: message, preferredStyle: preferredStyle)
         component().compose(to: self)
     }
+    
+    public func presented(by presentingViewController: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
+        presentingViewController.present(self, animated: flag, completion: completion)
+    }    
 }
