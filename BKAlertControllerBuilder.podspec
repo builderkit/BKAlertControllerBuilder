@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BKAlertControllerBuilder"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "@_functionBuilder for UIAlertController."
   spec.description  = <<-DESC
   @_functionBuilder for UIAlertController, using UIAlertController as SwiftUI style.
