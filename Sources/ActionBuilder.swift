@@ -11,32 +11,32 @@ import UIKit
 @_functionBuilder
 public struct ActionBuilder {
     
-    public static func buildBlock(_ component: Component) -> Component {
-        return component
+    public static func buildBlock(_ action: Action) -> Action {
+        return action
     }
     
-    public static func buildBlock(_ components: Component...) -> Component {
-        return ActionGroup(components)
+    public static func buildBlock(_ actions: Action...) -> Action {
+        return ActionGroup(actions)
     }
     
-    public static func buildIf(_ component: Component?) -> Component {
-        return component ?? EmptyAction()
+    public static func buildIf(_ action: Action?) -> Action {
+        return action ?? EmptyAction()
     }
     
-    public static func buildEither(first component: Component) -> Component {
-        return component
+    public static func buildEither(first action: Action) -> Action {
+        return action
     }
     
-    public static func buildEither(second component: Component) -> Component {
-        return component
+    public static func buildEither(second action: Action) -> Action {
+        return action
     }
 }
 
 extension UIAlertController {
     
-    public convenience init(title: String?, message: String?, preferredStyle: UIAlertController.Style, @ActionBuilder component: () -> Component) {
+    public convenience init(title: String?, message: String?, preferredStyle: UIAlertController.Style, @ActionBuilder action: () -> Action) {
         self.init(title: title, message: message, preferredStyle: preferredStyle)
-        component().compose(to: self)
+        action().compose(to: self)
     }
     
     public func presented(by presentingViewController: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {

@@ -8,11 +8,11 @@
 
 import UIKit
 
-public struct ActionGroup : Component {
+public struct ActionGroup : Action {
 
-    public let actions: [Component]
+    public let actions: [Action]
     
-    public init(_ actions: [Component]) {
+    public init(_ actions: [Action]) {
         self.actions = actions
     }
     

@@ -8,9 +8,7 @@
 
 import UIKit
 
-struct EmptyAction : Component {
-    
-    init() { }
+struct EmptyAction : Action {
     
     func compose(to alertController: UIAlertController) {
         // This is an empty action, so we do nothing here.

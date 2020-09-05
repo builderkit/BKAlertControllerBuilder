@@ -8,12 +8,12 @@
 
 import UIKit
 
-public struct ForEach<Data> : Component where Data : RandomAccessCollection {
+public struct ForEach<Data> : Action where Data : RandomAccessCollection {
     
     let actions: ActionGroup
         
-    public init(_ data: Data, @ActionBuilder component: (Data.Element) -> Component) {
-        actions = ActionGroup(data.map(component))
+    public init(_ data: Data, @ActionBuilder action: (Data.Element) -> Action) {
+        actions = ActionGroup(data.map(action))
     }
     
     public func compose(to alertController: UIAlertController) {

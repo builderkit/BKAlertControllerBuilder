@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5B02A7A325027DA000F2F687 /* BKAlertControllerBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B02A7A125027DA000F2F687 /* BKAlertControllerBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B02A7AE25027F2700F2F687 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7AD25027F2700F2F687 /* Component.swift */; };
-		5B02A7B0250280C100F2F687 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7AF250280C100F2F687 /* Action.swift */; };
+		5B02A7AE25027F2700F2F687 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7AD25027F2700F2F687 /* Action.swift */; };
 		5B02A7B2250280E100F2F687 /* ActionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7B1250280E100F2F687 /* ActionGroup.swift */; };
 		5B02A7B42502810700F2F687 /* EmptyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7B32502810700F2F687 /* EmptyAction.swift */; };
 		5B02A7B62502812600F2F687 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7B52502812600F2F687 /* ForEach.swift */; };
 		5B02A7B82502817A00F2F687 /* ActionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B02A7B72502817A00F2F687 /* ActionBuilder.swift */; };
+		5B4FA66A25032EFA009C412C /* DefaultAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FA66925032EFA009C412C /* DefaultAction.swift */; };
+		5B4FA66C25032F02009C412C /* CancelAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FA66B25032F02009C412C /* CancelAction.swift */; };
+		5B4FA66E25032F08009C412C /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FA66D25032F08009C412C /* Actions.swift */; };
+		5B4FA67025032F85009C412C /* DestructiveAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FA66F25032F85009C412C /* DestructiveAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B02A79E25027DA000F2F687 /* BKAlertControllerBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BKAlertControllerBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B02A7A125027DA000F2F687 /* BKAlertControllerBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKAlertControllerBuilder.h; sourceTree = "<group>"; };
 		5B02A7A225027DA000F2F687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B02A7AD25027F2700F2F687 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
-		5B02A7AF250280C100F2F687 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		5B02A7AD25027F2700F2F687 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		5B02A7B1250280E100F2F687 /* ActionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionGroup.swift; sourceTree = "<group>"; };
 		5B02A7B32502810700F2F687 /* EmptyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyAction.swift; sourceTree = "<group>"; };
 		5B02A7B52502812600F2F687 /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 		5B02A7B72502817A00F2F687 /* ActionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBuilder.swift; sourceTree = "<group>"; };
+		5B4FA66925032EFA009C412C /* DefaultAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAction.swift; sourceTree = "<group>"; };
+		5B4FA66B25032F02009C412C /* CancelAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAction.swift; sourceTree = "<group>"; };
+		5B4FA66D25032F08009C412C /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		5B4FA66F25032F85009C412C /* DestructiveAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructiveAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +74,15 @@
 		5B02A7A925027F0300F2F687 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5B02A7AD25027F2700F2F687 /* Component.swift */,
-				5B02A7AF250280C100F2F687 /* Action.swift */,
-				5B02A7B1250280E100F2F687 /* ActionGroup.swift */,
-				5B02A7B52502812600F2F687 /* ForEach.swift */,
-				5B02A7B32502810700F2F687 /* EmptyAction.swift */,
+				5B02A7AD25027F2700F2F687 /* Action.swift */,
 				5B02A7B72502817A00F2F687 /* ActionBuilder.swift */,
+				5B02A7B1250280E100F2F687 /* ActionGroup.swift */,
+				5B4FA66D25032F08009C412C /* Actions.swift */,
+				5B4FA66B25032F02009C412C /* CancelAction.swift */,
+				5B4FA66925032EFA009C412C /* DefaultAction.swift */,
+				5B4FA66F25032F85009C412C /* DestructiveAction.swift */,
+				5B02A7B32502810700F2F687 /* EmptyAction.swift */,
+				5B02A7B52502812600F2F687 /* ForEach.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -159,12 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B02A7AE25027F2700F2F687 /* Component.swift in Sources */,
+				5B02A7AE25027F2700F2F687 /* Action.swift in Sources */,
+				5B4FA66E25032F08009C412C /* Actions.swift in Sources */,
 				5B02A7B82502817A00F2F687 /* ActionBuilder.swift in Sources */,
 				5B02A7B42502810700F2F687 /* EmptyAction.swift in Sources */,
+				5B4FA66A25032EFA009C412C /* DefaultAction.swift in Sources */,
+				5B4FA66C25032F02009C412C /* CancelAction.swift in Sources */,
 				5B02A7B2250280E100F2F687 /* ActionGroup.swift in Sources */,
+				5B4FA67025032F85009C412C /* DestructiveAction.swift in Sources */,
 				5B02A7B62502812600F2F687 /* ForEach.swift in Sources */,
-				5B02A7B0250280C100F2F687 /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

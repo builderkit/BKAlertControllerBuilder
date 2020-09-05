@@ -12,6 +12,7 @@
 		5B02A7EB250285F100F2F687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B02A7E9250285F100F2F687 /* Main.storyboard */; };
 		5B02A7ED250285F200F2F687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B02A7EC250285F200F2F687 /* Assets.xcassets */; };
 		5B02A7F0250285F200F2F687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B02A7EE250285F200F2F687 /* LaunchScreen.storyboard */; };
+		5B4FA673250333FE009C412C /* BKAlertControllerBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4FA672250333FE009C412C /* BKAlertControllerBuilder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5B02A7EC250285F200F2F687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B02A7EF250285F200F2F687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B02A7F1250285F200F2F687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4FA672250333FE009C412C /* BKAlertControllerBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BKAlertControllerBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4FA673250333FE009C412C /* BKAlertControllerBuilder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				5B02A7E4250285F100F2F687 /* BKAlertControllerBuilderDemo_tvOS */,
 				5B02A7E3250285F100F2F687 /* Products */,
+				5B4FA671250333FE009C412C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				5B02A7F1250285F200F2F687 /* Info.plist */,
 			);
 			path = BKAlertControllerBuilderDemo_tvOS;
+			sourceTree = "<group>";
+		};
+		5B4FA671250333FE009C412C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4FA672250333FE009C412C /* BKAlertControllerBuilder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

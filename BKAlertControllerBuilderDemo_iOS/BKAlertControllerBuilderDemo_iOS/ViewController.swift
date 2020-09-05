@@ -26,18 +26,16 @@ class ViewController: UIViewController {
 
     @objc func onTap(_ sender: UIButton) {
         
-        let alert = UIAlertController(title: "title", message: "message", preferredStyle: .alert) { () -> Component in
-            Action(title: "Destructive", style: .destructive)
-            Action(title: "Cancel", style: .cancel) { _ in
+        UIAlertController(title: "title", message: "message", preferredStyle: .alert) {
+            Actions.destructive("Destructive")
+            Actions.cancel("Cancel") { _ in
                 print("tap action: Cancel")
             }
             
             ForEach(0..<5) {
-                Action(title: "Action:\($0)", style: .default)
+                DefaultAction(title: "Action:\($0)")
             }
-            
-        }
-        present(alert, animated: true, completion: nil)
+        }.presented(by: self, animated: true)
     }
 
 }
